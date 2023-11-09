@@ -7,9 +7,10 @@
 
 body {
     height: 100vh;
-    background-color: black;
+    background-color: #141F26;
     background-image: url(danube-horizontal.jpg);
     background-size: cover;
+    background-position: top:25% left: 25%;
 }
 
 li {
@@ -19,13 +20,15 @@ li {
 
 a {
     text-decoration: none;
-    color: white;
+    color: #141F26;
     font-size: 1rem;
 }
 
 a:hover {
-    color: orange;
+    color: #FF9233;
 }
+
+
 
 header {
     position: relative;
@@ -43,37 +46,39 @@ header {
 }
 
 .navbar .logo a {
-    font-size: 1.5rem;
+    font-size: 2em;
     font-weight: bold;
+
 }
 
     .navbar .links {
         display: flex;
-        gap: 2rem;
+        gap: 2.5rem;
+        font-weight: 700;
 }
 
 .navbar .toggle-btn {
-    color: white;
+    color: #141F26;
     font-size: 1.5rem;
     cursor: pointer;
     display: none;
 }
 
 .action-btn {
-    background-color: orange;
-    color: white;
+    background-color: #141F26;
+    color: #FFE9DB;
     padding: 0.5rem 1rem;
     border: none;
     outline: none;
     border-radius: 20px;
-    font-size: 0.8rem;
+    font-size: 1.5rem;
     font-weight: bold;
     cursor: pointer;
     transition: scale .2 ease;
 }
 
 .action-btn:hover{
-    color: black;
+    color: #FF9233;
     scale: 1.05;
 }
 
@@ -121,13 +126,28 @@ section#hero {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white;
+    color: #FFE9DB;
 }
 
 #hero h1 {
     font-size: 3em;
     margin-bottom: 1rem;
 }
+
+#hero p {
+    color: #FF9233;
+    font-size:25px;
+    background-color: rgba(10, 15, 19, 0.1);
+    backdrop-filter: blur(1.5px);
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: scale .2 ease;
+}
+
 /* responsive design */
 @media( max-width: 992px){
     .navbar .links,
@@ -145,8 +165,58 @@ section#hero {
 }
 
 @media( max-width: 576px){
-    .dropdown-menu {
+    .dropdown-menu, {
         left: 2rem;
         width: unset;
+        margin-top: 20px;
     }
+
+    .toggle-btn {
+        margin-left: 30px;
+        margin-top: 20px;
+        
+    }
+
+    .action-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 15px;
+        margin-top: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 40px;
+    margin-top: 20px;
+    font-size: px;
+}
+
+@media(max-width: 400px){
+    .action-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 10px;
+        margin-top: 20px;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-left: 0px;
+        margin-right: 40px;
+        margin-top: 20px;
+        font-size: 12px;
+    }
+
+
 }
