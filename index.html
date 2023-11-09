@@ -7,15 +7,50 @@
     <title>Eddy's Collection</title>
 </head>
 <body>
-    <div class="container">
-        <img src="danube-horizontal.jpg" alt="An image of the Danube river" width="100%" >
-        <div class="top-left"> Eddy's Collection </div>
-        <div class="shop"> Shop </div>
-        <div class="services"> Services </div>
-        <div class="contact"> Contact </div>
-        <div class="cart"> Cart </div>
-        <div class="book"> BOOK APPOINMENT </div>
-        <div class="Center"> My portofolio </div>
+  <header>
+    <div class="navbar">
+        <div class="logo"><a href="#"> Eddy's Collection </a></div>
+        <ul class="links">
+            <li><a href="hero">Home</a></li>
+            <li><a href="shop">Shop</a></li>
+            <li><a href="services">Services</a></li>
+            <li><a href="contact">Contact</a></li>
+            <li><a href="book">Appointments</a></li>
+        </ul>
+        <a href="#" class="action-btn">My Portofolio</a>
+         <div class="toggle-btn">
+            <svg fill="#ffffff" width="20px" height="20px" viewBox="-51.2 -51.2 614.40 614.40" xmlns="http://www.w3.org/2000/svg" transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="3.072"></g><g id="SVGRepo_iconCarrier"><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></g></svg>
+        </div>
     </div>
+
+    <div class="dropdown-menu">
+        <li><a href="hero">Home</a></li>
+        <li><a href="shop">Shop</a></li>
+        <li><a href="services">Services</a></li>
+        <li><a href="contact">Contact</a></li>
+        <li><a href="book">Appointments</a></li>
+        <li>
+            <a href="#" class="action-btn">My Portofolio</a>
+        </li>
+    </div>
+  </header>
+
+<main>
+    <section id="hero">
+        <h1>Welcome</h1>
+        <p>lorem ipsum</p>
+    </section>
+</main>
+
+  <script>
+    const toggleBTN = document.querySelector('.toggle-btn')
+    const toggleBTNiCON = document.querySelector('.toggle-btn i')
+    const dropDownMenu = document.querySelector('.dropdown-menu')
+
+    toggleBTN.onclick = function () {
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+    }
+  </script>
 </body>
 </html>
