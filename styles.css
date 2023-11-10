@@ -6,7 +6,6 @@
 }
 
 body {
-    height: 100vh;
     background-color: #141F26;
     background-image: url(river-danube.jpg);
     background-size: cover;
@@ -219,4 +218,37 @@ section#hero {
     }
 
 
+}
+}
+
+/* footer */
+
+.main {
+    flex-grow: 1;
+}
+
+.footer {
+    text-align: center;
+    background-color: #141F26;
+    color: #FFE9DB;
+    width: 100%;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.links2 {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.a:hover  {
+    color: #FF9233;
+    cursor: pointer;
 }
