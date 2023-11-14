@@ -242,6 +242,8 @@ section#hero {
 }
 
 .links2 {
+    margin: 5px 5px;
+    margin-bottom: 30px;
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -251,6 +253,16 @@ section#hero {
 .a:hover  {
     color: #FF9233;
     cursor: pointer;
+}
+
+.header2 {
+    position: relative;
+    top: 15px
+}
+
+.links2 {
+    position: relative;
+    top: 15px;
 }
 
 /* scroll bar */
