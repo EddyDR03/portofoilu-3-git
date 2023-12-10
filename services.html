@@ -3,53 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="porotofilio.css" />
-    <title>Eddy's Collection-My Porotofilio</title>
+    <link rel="stylesheet" href="services.css">
+    <title>Eddy's Collection- Services</title>
 </head>
 <body>
 
-  <div class="navbar">
-    <div class="logo"><a> Eddy's Collection </a></div>
-      <ul class="links">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="shop">Shop</a></li>
-          <li><a href="./services.html">Services</a></li>
-          <li><a href="#footer">Contact</a></li>
-          <li><a href="./email-form.html">Appointments</a></li>
-      </ul>
-      <a href="my-portofolio.html" class="action-btn">Back</a>
-  </div>
-</header>
-
-  <main>
-    <div class="gallery">
-      <img src="./concert.jpg">
-      <img src="./1.jpg">
-      <img src="./2nd-waterfall.jpg">
-      <img src="./bbal.jpg">
-      <img src="./candles.jpg">
-      <img src="./church.jpg">
-      <img src="./cig.jpg">
-      <img src="./clock.jpg">
-      <img src="./danube.jpg">
-      <img src="./dred.jpg">
-      <img src="./Jordnas.jpg">
-      <img src="./mic.jpg">
-      <img src="./mihia.jpg">
-      <img src="./plant.jpg">
-      <img src="./waterfall.jpg">
-      <img src="crack.jpg">
-      <img src="./rollie.jpg">
-      <img src="./shoes.jpg">
-      <img src="./Stand-up-shot copy.jpg">
-      <img src="./tall.jpg">
-      <img src="./vienna.jpg">
-      <img src="./IMG_7581.jpg">
-      <img src="./danube-horizontal.jpg">
+    <div class="navbar">
+      <div class="logo"><a> Eddy's Collection </a></div>
+        <ul class="links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="shop">Shop</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="#footer">Contact</a></li>
+            <li><a href="./email-form.html">Appointments</a></li>
+        </ul>
+        <a href="my-portofolio.html" class="action-btn">My Portofolio</a>
+         <div class="toggle-btn">
+            <svg fill="#ffffff" width="20px" height="20px" viewBox="-51.2 -51.2 614.40 614.40" xmlns="http://www.w3.org/2000/svg" transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="3.072"></g><g id="SVGRepo_iconCarrier"><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></g></svg>
+        </div>
     </div>
-  </main>
 
-  <div id="footer" class="footer">
+    <div class="dropdown-menu">
+        <li><a href="hero">Home</a></li>
+        <li><a href="shop">Shop</a></li>
+        <li><a href="services">Services</a></li>
+        <li><a href="contact">Contact</a></li>
+        <li><a href="book">Appointments</a></li>
+    </div>
+  </header>
+
+  <script>
+    const toggleBTN = document.querySelector('.toggle-btn')
+    const toggleBTNiCON = document.querySelector('.toggle-btn i')
+    const dropDownMenu = document.querySelector('.dropdown-menu')
+
+    toggleBTN.onclick = function () {
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+    }
+  </script>
+
+    <main div="all">
+    <div class="container">
+        <img src="./IMG_7581.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">Events</div>
+        </div>
+      </div>
+    
+      <div class="container">
+        <img src="./Jordnas.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">Events</div>
+        </div>
+      </div>
+
+      <div class="container">
+        <img src="./Stand-up-shot copy.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">Portrete</div>
+        </div>
+      </div>
+    </main>
+
+    <div id="footer" class="footer">
     <div class="header2"><h2>Follow me</h2></div>
     <div class="socials">
       <div class="links2"> 

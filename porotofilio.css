@@ -53,7 +53,7 @@ header {
 .navbar {
     width: 100%;
     height: 60px;
-    max-width: 1768px;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -105,14 +105,9 @@ header {
 .navbar {
     background-color: #141F26;
     padding: 30px;
-    margin: 0;
     text-align: center;
 }
-
-.links {
-    margin-right: 170px;
-}
-
+               
 /* footer */
 
 .main {
@@ -159,24 +154,19 @@ header {
 
 /* scroll bar */
 
-/* width */
 ::-webkit-scrollbar {
     width: 20px;
   }
   
-  /* Track */
   ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px grey;
     border-radius: 5px;
   }
   
-  /* Handle */
   ::-webkit-scrollbar-thumb {
     background: #637371;
     border-radius: 10px;
   }
-
-  /* responsive design */
 
 /* responsive design */
 @media( max-width: 992px){
