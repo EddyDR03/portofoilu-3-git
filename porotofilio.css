@@ -53,7 +53,7 @@ header {
 .navbar {
     width: 100%;
     height: 60px;
-    max-width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -70,20 +70,19 @@ header {
         display: flex;
         gap: 2.5rem;
         font-weight: 700;
-        font-family: 'open-sans', sans-serif;
 }
 
 .navbar .toggle-btn {
-    color: #0A0F12;
+    color: #FFE9DB;
     font-size: 1.5rem;
     cursor: pointer;
     display: none;
 }
 
 .action-btn {
-    background-color: #0A0F12;
+    background-color: #637371;
     color: #FFE9DB;
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 1rem;
     border: none;
     outline: none;
     border-radius: 20px;
@@ -104,8 +103,7 @@ header {
 
 .navbar {
     background-color: #141F26;
-    padding: 30px;
-    text-align: center;
+    padding: 15px;
 }
                
 /* footer */
